@@ -100,9 +100,9 @@ export function addAdditionalFields(
 
 		if (additionalFields.appendAttribution) {
 			if (additionalFields.parse_mode === 'Markdown') {
-				body.text = `${body.text}\n\n_${attributionText}_[n8n](${link})`;
+				body.text = body.text = body.text;
 			} else if (additionalFields.parse_mode === 'HTML') {
-				body.text = `${body.text}\n\n<em>${attributionText}</em><a href="${link}" target="_blank">n8n</a>`;
+				body.text = body.text = body.text;
 			}
 		}
 
